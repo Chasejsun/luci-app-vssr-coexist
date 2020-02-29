@@ -43,7 +43,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_Trojan
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_Kcptun
 	bool "Include Kcptun"
-	default y
+	default n
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR_Server
 	bool "Include ShadowsocksR Server"
@@ -87,11 +87,11 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_privoxy
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_simple-obfs
 	bool "Include simple-obfsl"
-	default y
+	default n
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_simple-obfs-server
 	bool "Include simple-obfs-server"
-	default y
+	default n
 	
 config PACKAGE_$(PKG_NAME)_INCLUDE_udpspeeder
 	bool "Include udpspeeder"
@@ -111,7 +111,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_GoQuiet-server
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_v2ray-plugin
 	bool "Include v2ray-plugin"
-	default y
+	default n
 endef
 
 define Package/luci-app-vssr
